@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<script>
+// Two Dimensional array
+
+// Creating 1st array
+var myArray2 = new Array(3);
+
+for (var i=0;i<3;i++){
+    myArray2[i] = new Array(3)
+}
+
+var start = 1;
+
+// Populating value in array
+for (var i=0;i<3;i++){
+    for (var j=0;j<3;j++){
+        myArray2[i][j] = start;
+        start = start + 1;
+}
+}
+
+// nested for loop
+for (var i=0;i<3;i++){
+    for (var j=0;j<3;j++){
+   document.write(myArray2[i][j] + "&emsp;");
+}
+document.write("<br>")
+}
+
+document.write("</br>")
+document.write("&emsp;+")
+document.write("</br>")
+
+// Creating 2nd array
+var myArray3 = new Array(3);
+
+for (var i=0;i<3;i++){
+    myArray3[i] = new Array(3)
+}
+
+var start1 = 10;
+
+// Populating value in array
+for (var i=0;i<3;i++){
+    for (var j=0;j<3;j++){
+        start1 = start1 - 1;
+        myArray3[i][j] = start1;
+        
+}
+}
+
+// nested for loop
+for (var i=0;i<3;i++){
+    for (var j=0;j<3;j++){
+   document.write(myArray3[i][j] + "&emsp;");
+}
+document.write("<br>")
+}
+
+
+document.write("</br>")
+document.write("&emsp;=")
+document.write("</br>")
+
+
+// addition of 1st and 2nd array
+var myArray4 = new Array(3);
+
+for (var i=0;i<3;i++){
+    myArray4[i] = new Array(3)
+}
+
+
+// Populating value in array
+for (var i=0;i<3;i++){
+    for (var j=0;j<3;j++){
+        myArray4[i][j] = myArray3[i][j] + myArray2[i][j]
+        
+}
+}
+
+// nested for loop
+for (var i=0;i<3;i++){
+    for (var j=0;j<3;j++){
+   document.write(myArray4[i][j] + "&emsp;");
+}
+document.write("<br>")
+}
+
+</script>
+
+
+
+</body>
+</html>
