@@ -9,7 +9,7 @@
 
 
 // spliting string using substring  indexOf and Last Index of
-var email = "badlarpatel@gmail.com";;
+var email = "badlarpatel@gmail.com";
 
 var emailAddress = email;//?
 var emailPart = email.substring(0,email.indexOf("@"))//?
@@ -384,22 +384,6 @@ var result = empName.filter(function(value,index,array){
     return array.indexOf(value) == index;
 })
 console.log(result)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -998,4 +982,55 @@ const allPositiveNumbers = numArray1.every(function(item){
     return item > 0
 })
 console.log(allPositiveNumbers)
+
+// Example 7 : find
+const objects = [{id:'a'} , {id:'b'} , {id:'c'} , {id:'d'} ];
+const found = objects.find(function(item){
+    return item.id =='b';
+})
+console.log(found)
+
+// Example 8 : find index
+const objects2 = [{id:'a'} , {id:'b'} , {id:'c'} , {id:'d'} ];
+const foundIndex = objects2.findIndex(function(item){
+    return item.id =='b';
+})
+console.log(foundIndex)
+
+
+
+/***********************************************************************************************************************
+*Objects.keys(obj)
+*Objects.values(obj)
+*Objects.entries(obj)
+*Create an iterable object from the Object i.e converting object into array
+ * *********************************************************************************************************************/
+
+let gameOfThrones ={
+    cersei:'Lannister',
+    arya: 'Stark',
+    jon: 'snow',
+    brienne: 'Tarth',
+    daenerys: 'Targaryen',
+    theon: 'Greyjoy',
+    jorah:'Mormont',
+    sandor:'clegane'
+}
+
+// for(let prop of arr)  -- We can use on array not on object. but we can covert object into array and then use this method
+// forEach() filter () map () reduce () -- we cannot use on object but we can convert object into array then use this methods
+
+// Keys will give an array. iterable object which will have all the keys in array
+let keys = Object.keys(gameOfThrones);
+console.log('keys', keys)
+
+// value will give an array. iterable object which will have all the Values in array
+let vals = Object.values(gameOfThrones);
+console.log('vals', vals)
+
+let entries = Object.entries(gameOfThrones);
+console.log('entries',entries)
+
+// two get value of 'snow'
+console.log(entries[2][1])
 
