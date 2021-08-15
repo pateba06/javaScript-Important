@@ -69,7 +69,7 @@ var userInput2 = 3 ;
 switch (userInput2) {
     case 1:
         console.log("Number 1 is winner")
-        break;ú
+        break;
     case 2:
         console.log("Number 2 is winner")
         break;
@@ -89,8 +89,11 @@ switch (userInput2) {
 // Lets see number is even or odd
 
 // Option 1 --normal way to do 
-var userInput3 = 8 ;
+var userInput3 = 5;
 var message = "";
+
+var test = userInput3 % 2 == 0 ? "it is even number" : "It is odd number";
+console.log(test)
 
 function oddeventest (){
     if ( userInput3 % 2 == 0){
@@ -171,13 +174,14 @@ var start = 0 ;
 while (start <= target){
     console.log(start)
      start = start + 2
+     console.log(start)
 }
 
 // While Loop example with Break ..we want to print all even numbers till the number enter ...we don't want it to exceed 100
 
 var target1 = 10000;
 var start1 = 0 ;
-
+// 
 while (start1 <= target1){
     console.log(start1)
     start1 = start1 + 2

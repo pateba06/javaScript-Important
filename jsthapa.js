@@ -75,7 +75,7 @@
 
 
 // 🙋‍👨‍🏫 Interview Question 1 🙋‍👨‍🏫
-// var vs let vs const 
+// var vs let vs const ar vs let vs const 
 
 
 
@@ -139,10 +139,10 @@
 // If used postfix, with operator after operand (for example, x++), 
 // the increment operator increments and returns the value before incrementing.
 
-// var num = 15;
-// var newNum = num-- + 5;
-// console.log(num);
-// console.log(newNum);
+var num = 15;
+var newNum = num-- + 5;
+console.log(num);
+console.log(newNum);
 
 
 // Postfix increment operator means the expression is evaluated 
@@ -153,10 +153,10 @@
 // If used prefix, with operator before operand (for example, ++x), 
 // the increment operator increments and returns the value after incrementing.
 
-// var num = 15;
-// var newNum = --num + 5; 
-// console.log(num);
-// console.log(newNum);
+var num = 15;
+var newNum = --num + 5; 
+console.log(num);
+console.log(newNum);
 
 
 // Prefix increment operator means the variable is incremented first and then 
@@ -269,12 +269,12 @@ var b = -20;
 
 
 // sol 1: ✔
-// console.log(9**2); // 9*9
-// console.log(10 ** -1); 1/10
+console.log(9**2); // 9*9
+console.log(10 ** -1); 1/10
 
 
 // sol 2:  ✔
-// console.log(5 + "thapa");
+console.log(5 + "thapa");
 
 // sol 3: ✔ 
 
