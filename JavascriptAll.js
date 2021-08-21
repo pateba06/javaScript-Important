@@ -1,5 +1,7 @@
 // ignore //? at the end of command I am using quokka in visual studio to get answer quickly
 
+const { array } = require("yargs");
+
 /*******************************************************************  *  * ***************************************************************/
 
 /***********************************************************************************************************************
@@ -261,7 +263,10 @@ arrayUnShift = arrayTest.unshift(1);
 console.log(arrayUnShift)
 console.log(arrayTest)
 
-
+// Reverse Method ---reverse the array
+test6 =[1,2,3,4,5,6]
+arrayPush = test.reverse()
+console.log(test)
 /***********************************************************************************************************************
  * JavaScript Array Mutators
  * Mutators can modify the array object. While non-mutators method does not modify array obj
@@ -726,9 +731,15 @@ console.log(getMonthNameFromMonthNumber(monthNumber))
 // // Loop over an Array
 // const fruits =["Apple" ,"Bananana" , "Oranges"]
 
-// fruits.forEach(function(item,index,array){
-//     console.log(item,index) //?
+
+// a =""
+// fruits.forEach((item,index,array)=>{
+// a = a+ " " + item
+// console.log(item)
+// console.log(index)
+// console.log(array)
 // })
+// console.log(a)
 
 
 
@@ -768,8 +779,26 @@ console.log(getMonthNameFromMonthNumber(monthNumber))
 // let pos = fruits.indexOf('Bananana');
 // console.log(pos);
 
+/**************************************************************
+ **************************************************************/
+// slice == we can take part of array in new array but it won't remove those values from main array
+// splice == it will take part from array but it will remove value from main array for sliced value
 
 
+//  const fruits =["Apple" ,"Bananana" , "Oranges",
+//  "watermelon" , "lemon" , "potato"]
+//  a=fruits.slice(0,2)
+//  console.log(a)
+//  console.log(fruits)
+ 
+//  const fruits1 =["Apple" ,"Bananana" , "Oranges",
+//  "watermelon" , "lemon" , "potato"]
+//  b=fruits1.splice(2,2)
+ 
+//  console.log(fruits1)
+//  console.log(b)
+ 
+ 
 /******************************************************************* 
  * Remove an item by index position
  * ***************************************************************/
